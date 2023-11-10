@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #410202;
+	line-height: 1.2;
+	background-color: #fff;
+}
+
+li {
+	list-style: none;
+}
+
+.error {
+	margin-top: 50px;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.coffee-machine {
+	display: grid;
+	align-items: start;
+	grid-template-columns: 1fr 2fr;
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 0 15px;
+}
+
+.menu {
+	display: grid;
+}
+
+.menu__item {
+	position: relative;
+	padding: 5px 25px;
+	border: 1px solid #f3f3f3;
+	border-right: initial;
+	cursor: pointer;
+}
+
+.menu__item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 4px;
+	right: -11px;
+	transform: rotate(45deg);
+	width: 20px;
+	height: 20px;
+	border-top: 1px solid #f3f3f3;
+	border-right: 1px solid #f3f3f3;
+}
+
+.menu__item:hover::after,
+.menu__item_active::after,
+.menu__item:hover,
+.menu__item_active {
+	background-color: #410202;
+	color: #fff;
+}
+
+.cup-ingredients {
+	position: relative;
+}
+
+.cup {
+	position: relative;
+	z-index: 2;
+	padding-bottom: 100%;
+}
+
+.cup img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	object-fit: contain;
+	width: 111%;
+	height: 111%;
+}
+
+.ingredients {
+	display: flex;
+	flex-direction: column-reverse;
+	position: absolute;
+	top: 15%;
+	left: 27%;
+	z-index: 1;
+	width: 50%;
+	height: 62%;
+	background-color: #eaeaea;
+	border-radius: 0% 0% 25% 25% / 0% 0% 75% 75%;
+	font-weight: bold;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+.ingredients div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.espresso {
+	background-color: #481f03;
+	color: #fff;
+}
+
+.water {
+	background-color: #5dc1ff;
+}
+
+.milk {
+	background-color: #fff;
+}
+
+.whipped-milk {
+	background-image: url(img/whipped-milk.jpg);
+	background-size: cover;
+}
+
+.whipped-cream {
+	background-color: #f9e9c7;
+}
+
+.milk-with-cream {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(249, 233, 199, 1) 70%);
+}
+
+.ice {
+	background-image: url(img/ice.jpg);
+}
+
+.liqueur {
+	background-color: #eed9a4;
+}
+
+.whiskey {
+	background-color: #feba55;
+}
+
+.syrup {
+	background-color: #fc8e15;
+}
+
+.lemon-juice {
+	background-color: #fee362;
+}
+
+.honey {
+	background-color: #fe9a28;
+}
+
+.ice-cream {
+	background-image: url(img/ice-cream.avif);
+	background-size: cover;
+}
+
+.grated-chocolate {
+	background-image: url(img/grated-chocolate.jpg);
+	color: #fff;
+}
+
+.chocolate {
+	background-color: #724200;
+	color: #fff;
+}
+
+.white-chocolate {
+	background-color: #f0e3c1;
+}
+
+.black-chocolate {
+	background-color: #633706;
+	color: #fff;
+}
